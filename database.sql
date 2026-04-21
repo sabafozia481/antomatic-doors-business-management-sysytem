@@ -1,7 +1,7 @@
 -- Automatic Doors Business Management System Database Structure
+-- Table structure only (Import this into your existing Hostinger database)
 
-CREATE DATABASE IF NOT EXISTS automatic_doors_db;
-USE automatic_doors_db;
+
 
 -- Users Table
 CREATE TABLE IF NOT EXISTS users (

@@ -1,9 +1,10 @@
 <?php
 // Database configuration
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root'); // Change this for production
-define('DB_PASS', '');     // Change this for production
-define('DB_NAME', 'automatic_doors_db');
+define('DB_USER', 'u599014834_auto_door_db');
+define('DB_PASS', 'FOZIA@1997#####a');
+define('DB_NAME', 'u599014834_auto_door_db'); // Prefixed for Hostinger compatibility
+
 
 // Set your base URL (e.g., http://yourdomain.com/)
 define('BASE_URL', '/'); // Use '/' for root as default
