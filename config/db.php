@@ -1,4 +1,9 @@
 <?php
+// Enable error reporting for debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Database configuration
 define('DB_HOST', 'localhost');
 define('DB_USER', 'u599014834_auto_door_db');
@@ -7,7 +12,8 @@ define('DB_NAME', 'u599014834_auto_door_db'); // Prefixed for Hostinger compatib
 
 
 // Set your base URL (e.g., http://yourdomain.com/)
-define('BASE_URL', '/'); // Use '/' for root as default
+// If site is in root, use '/'
+define('BASE_URL', '/'); 
 
 
 try {
@@ -23,4 +29,3 @@ try {
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-?>

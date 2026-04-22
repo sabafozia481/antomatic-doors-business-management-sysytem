@@ -7,7 +7,7 @@ function sanitize($data) {
 // Check if user is logged in
 function checkLogin() {
     if (!isset($_SESSION['user_id'])) {
-        header("Location: ../login.php");
+        header("Location: " . BASE_URL . "login.php");
         exit();
     }
 }
@@ -47,4 +47,3 @@ function getUserName($pdo, $id) {
     $user = $stmt->fetch();
     return $user ? $user['name'] : 'Unknown';
 }
-?>
